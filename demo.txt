@@ -1,0 +1,25 @@
+book-review-backend/
+│
+├── controllers/
+│   ├── books-controllers.js
+│   ├── reviews-controllers.js
+│   └── users-controllers.js
+│
+├── middleware/
+│   └── check-auth.js
+│
+├── models/
+│   ├── book.js
+│   ├── review.js
+│   ├── user.js
+│   └── http-error.js
+│
+├── routes/
+│   ├── books-routes.js
+│   ├── reviews-routes.js
+│   └── users-routes.js
+│
+├── app.js
+├── .env
+├── .gitignore
+└── package.json
