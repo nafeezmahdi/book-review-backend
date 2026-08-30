@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const booksRoutes = require("./routes/books-routes");
+const usersRoutes = require("./routes/users-routes");
 
 require("dotenv").config();
 
@@ -9,6 +10,7 @@ const app = express();
 app.use(express.json());
 
 app.use("/api/books", booksRoutes);
+app.use("/api/users", usersRoutes);
 
 app.get("/", (req, res) => {
   res.json({
